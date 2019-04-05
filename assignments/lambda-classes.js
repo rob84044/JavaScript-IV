@@ -28,4 +28,37 @@ class Instructor extends Person{
   }
 }
 
+class Student extends Person{
+  constructor (value){
+    super(value);
+    this.previousBackground = values.previousBackground;
+    this.className = values.className;
+    this.favSubjects = values.favSubjects;
+    this.grade = 12;
+  }
+  listsSubjects() {
+    this.favSubjects.forEach(subject => console.log(`${subject}`));
+  }
+  PRAssignment(){
+    `${student.name} has submitted a PR for ${subject}`
+  }
+  sprintChallenge(){
+    `${student.name} has begun sprint challenge on ${subject}`
+  }
+}
+
+class ProjectManager extends Person{
+  constructor(value){
+    super(value);
+    this.gradClassName = value.gradClassName;
+    this.favInstructor = value.favInstructor;
+  }
+  standUp(){
+    `${name} announces to ${channel}, @channel StandUp times!​​​​​`
+  }
+  debugsCode(){
+    `${name} debugs ${student.name}'s code on ${subject}`
+  }
+}
+
 
